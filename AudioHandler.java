@@ -1,3 +1,32 @@
+/*
+ Claritas: 'Clarity Through Innovation
+
+ Project: SocBox
+ Purpose: Audio Handler
+ Code File Name: NEED TO CHECK WHAT THIS IS SUPPOSED TO BE
+
+ Description: This class is designed to play, pause, mute and change the track currently playing,
+ this class takes the arguments of the activity it is called from and the songs to be included in the playlist.
+ The songs can be revised at a later date using the setPlaylist method. This handler also makes uses of
+ hardware audio controls.
+
+ Notes: In order for this class to work properly the associated xml file buttons must be named appropriately.
+ The play button MUST have the ID playButton. The mute button MUST have the ID muteButton.
+
+ Initial Authors:
+                  Andrew Perry
+                  Carlos Archilla
+
+ Change History:
+ Version:0.1
+ Author: Andrew Perry
+ Change: Created original version
+ 2/3/15
+
+ Traceability:
+
+*/
+
 //Package
 package first.test1.com.myapplication;
 
@@ -15,37 +44,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import static android.media.AudioManager.STREAM_MUSIC;
 
-
-/**
- * Claritas: 'Clarity Through Innovation
- *
- * Project: SocBox
- * Purpose: Audio Handler
- * Code File Name: NEED TO CHECK WHAT THIS IS SUPPOSED TO BE
- *
- * Description: This class is designed to play, pause, mute and change the track currently playing,
- * this class takes the arguments of the activity it is called from and the songs to be included in the playlist.
- * The songs can be revised at a later date using the setPlaylist method. This handler also makes uses of
- * hardware audio controls.
- *
- *
- * Notes: In order for this class to work properly the associated xml file buttons must be named appropriately.
- * The play button MUST have the ID playButton. The mute button MUST have the ID muteButton.
- *
- *
- * Initial Authors:
- *                  Andrew Perry
- *                  Carlos Archilla
- *
- * Change History:
- * Version:0.1
- * Author: Andrew Perry
- * Change: Created original version
- * 2/3/15
- *
- * Traceability:
- *
- */
 public class AudioHandler implements MediaPlayer.OnPreparedListener, MediaPlayer.OnErrorListener, AudioManager.OnAudioFocusChangeListener {
 
     public WifiManager.WifiLock wifiLock;
